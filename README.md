@@ -5,17 +5,17 @@
 
 # Nomenclature
 
-| Symbol | Description |
-|--------|-------------|
-| \( H \) | Set of time slots \( h \) |
-| \( N \) | Set of prosumers \( n \) |
-| \( \tau_h \) | Time-of-use tariff at time slot \( h \) |
-| \( p^{inf}_{h,n} \) | Load demand of prosumer \( n \) at time slot \( h \) |
-| \( p^{ev}_{h,n} \) | EV (flexible) demand of prosumer \( n \) at time slot \( h \) |
-| \( e^{ev}_n \) | EV battery state of charge of prosumer \( n \) |
-| \( E^{ev}_{min} \) | EV minimum state of charge |
-| \( P^{max} \) | Transformer thermal limit |
-| \( p^{max}_{h,n} \) | Power limit for prosumer \( n \) at time slot \( h \) |
+| Symbol           | Description                                                  |
+|------------------|--------------------------------------------------------------|
+| `H`              | Set of time slots (`h`)                                      |
+| `N`              | Set of prosumers (`n`)                                       |
+| `\tau_h`         | Time-of-use tariff at time slot `h`                          |
+| `p^{inf}_{h,n}`  | Load demand of prosumer `n` at time slot `h`                 |
+| `p^{ev}_{h,n}`   | EV (flexible) demand of prosumer `n` at time slot `h`        |
+| `e^{ev}_n`       | EV battery state of charge of prosumer `n`                   |
+| `E^{ev}_{min}`   | EV minimum state of charge                                   |
+| `P^{max}`        | Transformer thermal limit                                    |
+| `p^{max}_{h,n}`  | Power limit for prosumer `n` at time slot `h`                |
 
 # Lower Level Optimization Problem
 
