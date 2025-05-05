@@ -45,8 +45,6 @@ p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
 + \sum_{h \in H} \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right)
 ```
 
-## KKT Conditions
-
 ### 1. Stationarity
 
 For each time slot \( h \in H \):
