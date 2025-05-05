@@ -47,10 +47,8 @@ p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
 
 ### 1. Stationarity
 
-For each time slot \( h \in H \):
-
 ```math
-\frac{\partial \mathcal{L}}{\partial p^{ev}_h} = \tau_h - \lambda^1 + \lambda^2_h = 0
+\frac{\partial \mathcal{L}}{\partial p^{ev}_h} = \tau_h - \lambda^1 + \lambda^2_h = 0 \quad \forall h \in H
 ```
 
 ### 2. Primal Feasibility
