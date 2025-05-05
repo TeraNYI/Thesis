@@ -8,7 +8,7 @@
 |------------------|--------------------------------------------------------------|
 | `H`              | Set of time slots (`h`)                                      |
 | `N`              | Set of prosumers (`n`)                                       |
-| `	au_h`         | Time-of-use tariff at time slot `h`                          |
+| `\tau_h`         | Time-of-use tariff at time slot `h`                          |
 | `p^{inf}_{h,n}`  | Load demand of prosumer `n` at time slot `h`                 |
 | `p^{ev}_{h,n}`   | EV (flexible) demand of prosumer `n` at time slot `h`        |
 | `e^{ev}_n`       | EV battery state of charge of prosumer `n`                   |
