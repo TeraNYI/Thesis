@@ -1,4 +1,3 @@
-
 <script type="text/javascript"
   async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
@@ -9,7 +8,7 @@
 |------------------|--------------------------------------------------------------|
 | `H`              | Set of time slots (`h`)                                      |
 | `N`              | Set of prosumers (`n`)                                       |
-| `\tau_h`         | Time-of-use tariff at time slot `h`                          |
+| `	au_h`         | Time-of-use tariff at time slot `h`                          |
 | `p^{inf}_{h,n}`  | Load demand of prosumer `n` at time slot `h`                 |
 | `p^{ev}_{h,n}`   | EV (flexible) demand of prosumer `n` at time slot `h`        |
 | `e^{ev}_n`       | EV battery state of charge of prosumer `n`                   |
@@ -44,4 +43,44 @@ p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
 \sum_{h \in H} \tau_h(p^{inf}_h + p^{ev}_h)
 + \lambda^1 \left( E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \right)
 + \sum_{h \in H} \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right)
+```
+
+## KKT Conditions
+
+### 1. Stationarity
+
+For each time slot \( h \in H \):
+
+```math
+\frac{\partial \mathcal{L}}{\partial p^{ev}_h} = \tau_h - \lambda^1 + \lambda^2_h = 0
+```
+
+### 2. Primal Feasibility
+
+```math
+E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \leq 0
+```
+
+```math
+p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
+```
+
+### 3. Dual Feasibility
+
+```math
+\lambda^1 \geq 0
+```
+
+```math
+\lambda^2_h \geq 0 \quad \forall h \in H
+```
+
+### 4. Complementary Slackness
+
+```math
+\lambda^1 \left( E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \right) = 0
+```
+
+```math
+\lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right) = 0 \quad \forall h \in H
 ```
