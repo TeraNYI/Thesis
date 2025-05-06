@@ -79,7 +79,7 @@ p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
 
 ```math
 \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right) = 0 \quad \forall h \in H
-
+```
 ## Bi-level Reformulation with KKT
 
 **Upper-Level Objective:**
