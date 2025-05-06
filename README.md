@@ -21,13 +21,13 @@
 Minimize:
 
 $$
-\min_{p^{\text{ev}}h} \sum{h \in H} \tau_h (p^{\text{inf}}_h + p^{\text{ev}}_h)
+\min_{p^{\text{ev}}_h} \sum_{h \in H} \tau_h (p^{\text{inf}}_h + p^{\text{ev}}_h)
 $$
 
 Subject to:
 
 $$
-E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
+E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \leq 0
 $$
 
 $$
@@ -42,9 +42,9 @@ Lagrangian:
 
 $$
 \mathcal{L}(p^{\text{ev}}_h, \lambda) =
-\sum{h \in H} \tau_h(p^{\text{inf}}_h + p^{\text{ev}}_h)
-		\lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right)
-		\sum_{h \in H} \lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right)
+\sum_{h \in H} \tau_h(p^{\text{inf}}_h + p^{\text{ev}}_h)
++ \lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \right)
++ \sum_{h \in H} \lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right)
 $$
 
 Stationarity:
@@ -56,7 +56,7 @@ $$
 Primal Feasibility:
 
 $$
-E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
+E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \leq 0
 $$
 
 $$
@@ -76,7 +76,7 @@ $$
 Complementary Slackness:
 
 $$
-\lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right) = 0
+\lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \right) = 0
 $$
 
 $$
@@ -90,7 +90,7 @@ $$
 Maximize:
 
 $$
-\max_{p^{\max}_{h,n}} \quad p^{\max}_{h,n}
+\max_{p^{\max}_{h,n}} \quad \sum_{h \in H} \sum_{n \in N} p^{\max}_{h,n}
 $$
 
 Subject to:
@@ -108,11 +108,11 @@ $$
 Primal Feasibility:
 
 $$
-E^{\text{ev}}_{\min} - e^{\text{ev}}_n - \sum{h \in H} p^{\text{ev}}_{h,n} \leq 0 \quad \forall n \in N
+E^{\text{ev}}_{\min} - e^{\text{ev}}_n - \sum_{h \in H} p^{\text{ev}}_{h,n} \leq 0 \quad \forall n \in N
 $$
 
 $$
-p^{\text{inf}}{h,n} + p^{\text{ev}}{h,n} - p^{\max}_{h,n} \leq 0 \quad \forall h \in H, \forall n \in N
+p^{\text{inf}}_{h,n} + p^{\text{ev}}_{h,n} - p^{\max}_{h,n} \leq 0 \quad \forall h \in H, \forall n \in N
 $$
 
 Dual Feasibility:
@@ -128,15 +128,9 @@ $$
 Complementary Slackness:
 
 $$
-\lambda^1_n \left( E^{\text{ev}}_{\min} - e^{\text{ev}}n - \sum{h \in H} p^{\text{ev}}_{h,n} \right) = 0 \quad \forall n \in N
+\lambda^1_n \left( E^{\text{ev}}_{\min} - e^{\text{ev}}_n - \sum_{h \in H} p^{\text{ev}}_{h,n} \right) = 0 \quad \forall n \in N
 $$
 
 $$
-\lambda^2_{h,n} \left( p^{\text{inf}}{h,n} + p^{\text{ev}}{h,n} - p^{\max}_{h,n} \right) = 0 \quad \forall h \in H, \forall n \in N
+\lambda^2_{h,n} \left( p^{\text{inf}}_{h,n} + p^{\text{ev}}_{h,n} - p^{\max}_{h,n} \right) = 0 \quad \forall h \in H, \forall n \in N
 $$
-
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> 060f8cc (Add KKT model and README with nomenclature and optimization details)
