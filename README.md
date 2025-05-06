@@ -79,4 +79,8 @@ p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
 
 ```math
 \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right) = 0 \quad \forall h \in H
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 060f8cc (Add KKT model and README with nomenclature and optimization details)
