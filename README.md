@@ -16,93 +16,124 @@
 | `P^{max}`        | Transformer thermal limit                                    |
 | `p^{max}_{h,n}`  | Power limit for prosumer `n` at time slot `h`                |
 
-# Lower Level Optimization Problem
+Lower Level Optimization Problem
 
 Minimize:
 
-```math
-\min_{p^{ev}_h} \quad \sum_{h\in H} \tau_h(p^{inf}_{h} + p^{ev}_{h})
-```
+$$
+\min_{p^{\text{ev}}h} \sum{h \in H} \tau_h (p^{\text{inf}}_h + p^{\text{ev}}_h)
+$$
 
 Subject to:
 
-```math
-E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \leq 0
-```
+$$
+E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
+$$
 
-```math
-p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
-```
+$$
+p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \leq 0 \quad \forall h \in H
+$$
 
-# KKT Conditions
+⸻
 
-## Lagrangian Function
+KKT Conditions
 
-```math
-\mathcal{L}(p^{ev}_h, \lambda^1, \lambda^2_h) =
-\sum_{h \in H} \tau_h(p^{inf}_h + p^{ev}_h)
-+ \lambda^1 \left( E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \right)
-+ \sum_{h \in H} \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right)
-```
+Lagrangian:
 
-### 1. Stationarity
+$$
+\mathcal{L}(p^{\text{ev}}h, \lambda) =
+\sum{h \in H} \tau_h(p^{\text{inf}}_h + p^{\text{ev}}_h)
+	•	\lambda^1 \left( E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right)
+	•	\sum_{h \in H} \lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right)
+$$
 
-```math
-\frac{\partial \mathcal{L}}{\partial p^{ev}_h} = \tau_h - \lambda^1 + \lambda^2_h = 0 \quad \forall h \in H
-```
+Stationarity:
 
-### 2. Primal Feasibility
+$$
+\frac{\partial \mathcal{L}}{\partial p^{\text{ev}}_h} = \tau_h - \lambda^1 + \lambda^2_h = 0 \quad \forall h \in H
+$$
 
-```math
-E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \leq 0
-```
+Primal Feasibility:
 
-```math
-p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
-```
+$$
+E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
+$$
 
-### 3. Dual Feasibility
+$$
+p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \leq 0 \quad \forall h \in H
+$$
 
-```math
+Dual Feasibility:
+
+$$
 \lambda^1 \geq 0
-```
+$$
 
-```math
+$$
 \lambda^2_h \geq 0 \quad \forall h \in H
-```
+$$
 
-### 4. Complementary Slackness
+Complementary Slackness:
 
-```math
-\lambda^1 \left( E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \right) = 0
-```
+$$
+\lambda^1 \left( E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right) = 0
+$$
 
-```math
-\lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right) = 0 \quad \forall h \in H
-```
-## Bi-level Reformulation with KKT
+$$
+\lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right) = 0 \quad \forall h \in H
+$$
 
-**Upper-Level Objective:**
-```math
-\max_{p^{max}_{h,n}}  p^{max}_{h,n}
-```
+⸻
+
+Bi-level Reformulation with KKT
+
+Maximize:
+
+$$
+\max_{p^{\max}{h,n}} \quad p^{\max}{h,n}
+$$
 
 Subject to:
-```math
-∑_{n∈N} p^{max}_{h,n} - P^{max} ≤ 0               \forall h \in H
-```
 
-```math
-// KKT Conditions from Lower Level
-τ_h - λ^1_n + λ^2_{h,n} = 0                        \forall h in H, \forall n \in N
-E^{ev}_{min} - e^{ev}_n - ∑_{h∈H} p^{ev}_{h,n} ≤ 0  ∀ n ∈ N
-p^{inf}_{h,n} + p^{ev}_{h,n} - p^{max}_{h,n} ≤ 0    ∀ h ∈ H, ∀ n ∈ N
-λ^1_n ≥ 0                                           ∀ n ∈ N
-λ^2_{h,n} ≥ 0                                       ∀ h ∈ H, ∀ n ∈ N
-λ^1_n * (E^{ev}_{min} - e^{ev}_n - ∑_{h∈H} p^{ev}_{h,n}) = 0       ∀ n ∈ N
-λ^2_{h,n} * (p^{inf}_{h,n} + p^{ev}_{h,n} - p^{max}_{h,n}) = 0     ∀ h ∈ H, ∀ n ∈ N
-```
+$$
+\sum_{n \in N} p^{\max}_{h,n} - P^{\max} \leq 0 \quad \forall h \in H
+$$
 
+Stationarity:
+
+$$
+\tau_h - \lambda^1_n + \lambda^2_{h,n} = 0 \quad \forall h \in H, \forall n \in N
+$$
+
+Primal Feasibility:
+
+$$
+E^{\text{ev}}{\min} - e^{\text{ev}}n - \sum{h \in H} p^{\text{ev}}{h,n} \leq 0 \quad \forall n \in N
+$$
+
+$$
+p^{\text{inf}}{h,n} + p^{\text{ev}}{h,n} - p^{\max}_{h,n} \leq 0 \quad \forall h \in H, \forall n \in N
+$$
+
+Dual Feasibility:
+
+$$
+\lambda^1_n \geq 0 \quad \forall n \in N
+$$
+
+$$
+\lambda^2_{h,n} \geq 0 \quad \forall h \in H, \forall n \in N
+$$
+
+Complementary Slackness:
+
+$$
+\lambda^1_n \left( E^{\text{ev}}{\min} - e^{\text{ev}}n - \sum{h \in H} p^{\text{ev}}{h,n} \right) = 0 \quad \forall n \in N
+$$
+
+$$
+\lambda^2_{h,n} \left( p^{\text{inf}}{h,n} + p^{\text{ev}}{h,n} - p^{\max}_{h,n} \right) = 0 \quad \forall h \in H, \forall n \in N
+$$
 
 <<<<<<< HEAD
 ```
