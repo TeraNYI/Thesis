@@ -79,6 +79,29 @@ p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H
 
 ```math
 \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right) = 0 \quad \forall h \in H
+
+## Bi-level Reformulation with KKT
+
+**Upper-Level Objective:**
+```
+max_{p^{max}_{h,n}}  p^{max}_{h,n}
+```
+
+**Subject to:**
+```
+∑_{n∈N} p^{max}_{h,n} - P^{max} ≤ 0               ∀ h ∈ H
+
+// KKT Conditions from Lower Level
+τ_h - λ^1_n + λ^2_{h,n} = 0                        ∀ h ∈ H, ∀ n ∈ N
+E^{ev}_{min} - e^{ev}_n - ∑_{h∈H} p^{ev}_{h,n} ≤ 0  ∀ n ∈ N
+p^{inf}_{h,n} + p^{ev}_{h,n} - p^{max}_{h,n} ≤ 0    ∀ h ∈ H, ∀ n ∈ N
+λ^1_n ≥ 0                                           ∀ n ∈ N
+λ^2_{h,n} ≥ 0                                       ∀ h ∈ H, ∀ n ∈ N
+λ^1_n * (E^{ev}_{min} - e^{ev}_n - ∑_{h∈H} p^{ev}_{h,n}) = 0       ∀ n ∈ N
+λ^2_{h,n} * (p^{inf}_{h,n} + p^{ev}_{h,n} - p^{max}_{h,n}) = 0     ∀ h ∈ H, ∀ n ∈ N
+```
+
+
 <<<<<<< HEAD
 ```
 =======
