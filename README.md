@@ -16,7 +16,7 @@
 | `P^{max}`        | Transformer thermal limit                                    |
 | `p^{max}_{h,n}`  | Power limit for prosumer `n` at time slot `h`                |
 
-Lower Level Optimization Problem
+# Lower Level Optimization Problem
 
 Minimize:
 
@@ -27,7 +27,7 @@ $$
 Subject to:
 
 $$
-E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
+E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
 $$
 
 $$
@@ -36,15 +36,15 @@ $$
 
 ⸻
 
-KKT Conditions
+## KKT Conditions
 
 Lagrangian:
 
 $$
-\mathcal{L}(p^{\text{ev}}h, \lambda) =
+\mathcal{L}(p^{\text{ev}}_h, \lambda) =
 \sum{h \in H} \tau_h(p^{\text{inf}}_h + p^{\text{ev}}_h)
-	•	\lambda^1 \left( E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right)
-	•	\sum_{h \in H} \lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right)
+		\lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right)
+		\sum_{h \in H} \lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right)
 $$
 
 Stationarity:
@@ -56,7 +56,7 @@ $$
 Primal Feasibility:
 
 $$
-E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
+E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \leq 0
 $$
 
 $$
@@ -76,7 +76,7 @@ $$
 Complementary Slackness:
 
 $$
-\lambda^1 \left( E^{\text{ev}}{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right) = 0
+\lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum{h \in H} p^{\text{ev}}_h \right) = 0
 $$
 
 $$
@@ -85,12 +85,12 @@ $$
 
 ⸻
 
-Bi-level Reformulation with KKT
+# Bi-level Reformulation with KKT
 
 Maximize:
 
 $$
-\max_{p^{\max}{h,n}} \quad p^{\max}{h,n}
+\max_{p^{\max}_{h,n}} \quad p^{\max}_{h,n}
 $$
 
 Subject to:
@@ -108,7 +108,7 @@ $$
 Primal Feasibility:
 
 $$
-E^{\text{ev}}{\min} - e^{\text{ev}}n - \sum{h \in H} p^{\text{ev}}{h,n} \leq 0 \quad \forall n \in N
+E^{\text{ev}}_{\min} - e^{\text{ev}}_n - \sum{h \in H} p^{\text{ev}}_{h,n} \leq 0 \quad \forall n \in N
 $$
 
 $$
@@ -128,7 +128,7 @@ $$
 Complementary Slackness:
 
 $$
-\lambda^1_n \left( E^{\text{ev}}{\min} - e^{\text{ev}}n - \sum{h \in H} p^{\text{ev}}{h,n} \right) = 0 \quad \forall n \in N
+\lambda^1_n \left( E^{\text{ev}}_{\min} - e^{\text{ev}}n - \sum{h \in H} p^{\text{ev}}_{h,n} \right) = 0 \quad \forall n \in N
 $$
 
 $$
