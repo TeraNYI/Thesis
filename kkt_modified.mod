@@ -30,7 +30,8 @@ var p_total {h in H, n in N} = p_inf[h,n] + p_ev[h,n];
 # =============================
 # OBJECTIVE
 # =============================
-maximize Objective {h in H, n in N}: p_max[h,n];
+
+maximize Objective {n in N, h in H}: p_max[h,n];
 
 # =============================
 # CONSTRAINTS
@@ -60,5 +61,23 @@ subject to Max_Load_Limit {h in H, n in N}:
 subject to CompSlack_Energy {n in N}:
     lambda1[n] * (E_ev_min[n] - e_ev[n] - sum {h in H} p_ev[h,n]) = 0;
 
+#param M = 1e14;  # A large constant for the reformulation
+#var z1 {n in N}, binary;
+#
+#subject to CompSlack_Energy_Reform1 {n in N}:
+#    E_ev_min[n] - e_ev[n] - sum {h in H} p_ev[h,n] <= M * z1[n];
+#
+#subject to CompSlack_Energy_Reform2 {n in N}:
+#    lambda1[n] <= M * (1 - z1[n]);
+
+
 subject to CompSlack_Transformer {h in H, n in N}:
     lambda2[h,n] * (p_inf[h,n] + p_ev[h,n] - p_max[h,n]) = 0;
+
+#var z2 {h in H, n in N}, binary;
+#
+#subject to CompSlack_Transformer_Reform1 {h in H, n in N}:
+#    p_inf[h,n] + p_ev[h,n] - p_max[h,n] <= M * z2[h,n];
+#
+#subject to CompSlack_Transformer_Reform2 {h in H, n in N}:
+#    lambda2[h,n] <= M * (1 - z2[h,n]);

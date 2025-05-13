@@ -2,37 +2,42 @@ H = 1:24; % Time in hours
 N = 30;   % Number of households
 
 % Define Time-of-Use (TOU) tariff using an anonymous function
-TOU_tariff_func = @(t) (t >= 7 & t <= 10) * 0.30 + ... % Peak hours: 7 AM to 10 AM
-                       (t >= 17 & t <= 20) * 0.30 + ... % Peak hours: 5 PM to 8 PM
+TOU_tariff_func = @(t) (t >= 7 & t <= 10) * 0.50 + ... % Peak hours: 7 AM to 10 AM
+                       (t >= 17 & t <= 20) * 0.50 + ... % Peak hours: 5 PM to 8 PM
                        (t >= 11 & t <= 16) * 0.20 + ... % Shoulder hours: 11 AM to 4 PM
                        ((t < 7 | t > 20) & (t < 11 | t > 16)) * 0.10; % Off-peak hours
 
-TOU_tariff = TOU_tariff_func(H); % Time-of-Use tariff 
+TOU_tariff = TOU_tariff_func(H);     % Time-of-Use tariff 
 
-rng(1);                       % Seed for reproducibility
-P_flat = zeros(length(H), N); % N demand profiles
-P_ev = zeros(length(H), N);   % preallocated EV charging demand profiles
+rng(1);                          % Seed for reproducibility
+P_flat = zeros(length(H), N);       % N demand profiles
+P_ev = zeros(length(H), N);         % preallocated EV charging demand profiles
 
-E_ev_max = 50;    % Maximum EV battery capacity (kWh)
-E_ev_min = E_ev_max*0.8;     % Minimum EV battery capacity (at least 70% of max)
+E_ev_max = 50;                  % Maximum EV battery capacity (kWh)
+E_ev_min = E_ev_max*0.8;        % Minimum EV battery capacity (at least 70% of max)
 E_ev = (E_ev_max*0.75)*ones(1, N);           % N EV charging demand profiles
 
-for i = 1:N                   % Generate N random household demand profiles
+for i = 1:N                     % Generate N random household demand profiles
     P_flat(:, i) = household_demand(H);
     E_ev(i) = E_ev(i)-EV_demand; % initial EV cpacity
 end
 
 %a = 1;    % electricity price ($/kWh)
 %eff = 1;  % EV charging efficiency
-T_limit = max(sum(P_flat,2)) + 1;     % Transformer Thermal Limit (kW)
+T_limit = max(sum(P_flat,2)) + 0.01;     % Transformer Thermal Limit (kW)
 
 
 %%
 % AMPL
+
 ampl = AMPL('/Applications/AMPL/');
 ampl.read('kkt_modified.mod');
-ampl.setOption('solver', 'gurobi');
+%ampl.setOption('solver', 'gurobi');
+%ampl.setOption('solver', 'gurobi');
 %ampl.setOption('gurobi_options', 'nonconvex=2');
+
+ampl.setOption('solver', 'gurobi');
+
 ampl.eval('option solver;');
 % Assign data to AMPL
 
@@ -82,34 +87,9 @@ P_avg_of_avg = mean(P_cumulative); % Average of cumulative demand
 P_peak_of_peaks = max(P_cumulative); % Peak of cumulative demand
 
 % Combine all plots into one figure
-figure;
-
-% Subplot 1: Stacked bar chart of household demand profiles
-subplot(3, 2, 3);
-hold on;
-bar(H, P_flat', 'stacked'); % Stacked bar chart for all profiles
-plot(H, sum(P_flat, 2), 'w', 'LineWidth', 2); % Total load as a black line
-yline(T_limit, 'r--', 'LineWidth', 1.5, 'Label', 'Transformer Limit'); % Transformer thermal limit
-xlabel('Time (hours)'); xticks(0:2:24);
-ylabel('Power Demand (kW)'); ylim([0 55]);
-title('Household Demand Profiles');
-grid on;
-hold off;
-
-% Subplot 2: Stacked bar chart of demand + EV profiles
-subplot(3, 2, 4);
-hold on;
-bar(H, (P_flat + P_ma)', 'stacked'); % Stacked bar chart for all profiles
-plot(H, sum(P_flat, 2), 'w', 'LineWidth', 2); % Total load as a black line
-yline(T_limit, 'r--', 'LineWidth', 1.5, 'Label', 'Transformer Limit'); % Transformer thermal limit
-xlabel('Time (hours)'); xticks(0:2:24);
-ylabel('Power Demand (kW)'); ylim([0 55]);
-title('Demand + EV Profiles');
-grid on;
-hold off;
-
-% Subplot 3: Stacked bar chart of EV charging profiles with TOU zones highlighted
-subplot(3, 2, 1);
+figure('Position', [100, 100, 800, 800]); % [left, bottom, width, height]
+% Subplot 1(&2): Stacked bar chart of EV charging profiles with TOU zones highlighted
+subplot(3, 2, [1 2]);
 hold on;
 
 % Highlight TOU zones
@@ -125,7 +105,32 @@ title('EV Charging Profiles with TOU Zones');
 grid on;
 hold off;
 
-% Subplot 4: Bar chart of initial EV energy levels
+% Subplot 3: Stacked bar chart of household demand profiles
+subplot(3, 2, 3);
+hold on;
+bar(H, P_flat', 'stacked'); % Stacked bar chart for all profiles
+plot(H, sum(P_flat, 2), 'w', 'LineWidth', 2); % Total load as a black line
+yline(T_limit, 'r--', 'LineWidth', 1.5, 'Label', 'Transformer Limit'); % Transformer thermal limit
+xlabel('Time (hours)'); xticks(0:2:24);
+ylabel('Power Demand (kW)'); ylim([0 55]);
+title('Household Demand Profiles');
+grid on;
+hold off;
+
+% Subplot 4: Stacked bar chart of demand + EV profiles
+subplot(3, 2, 4);
+hold on;
+bar(H, (P_flat + P_ma)', 'stacked'); % Stacked bar chart for all profiles
+plot(H, sum(P_flat, 2), 'w', 'LineWidth', 2); % Total load as a black line
+yline(T_limit, 'r--', 'LineWidth', 1.5, 'Label', 'Transformer Limit'); % Transformer thermal limit
+xlabel('Time (hours)'); xticks(0:2:24);
+ylabel('Power Demand (kW)'); ylim([0 55]);
+title('Demand + EV Profiles');
+grid on;
+hold off;
+
+
+% Subplot 5: Bar chart of initial EV energy levels
 subplot(3, 2, 5);
 bar(E_ev);
 xlabel('Households'); xticks(1:2:N);
@@ -133,7 +138,7 @@ ylabel('Energy (kWh)'); ylim([0 50]);  yline(40, "r--");
 title('Initial EV Energy Levels');
 grid on;
 
-% Subplot 5: Bar chart of updated EV energy levels
+% Subplot 6: Bar chart of updated EV energy levels
 subplot(3, 2, 6);
 bar(E_ev_new);
 xlabel('Households'); xticks(1:2:N);

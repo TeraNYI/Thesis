@@ -1,136 +1,49 @@
-<script type="text/javascript"
-  async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+# Host Capacity Management via Single-Level Reformulation of a Bilevel EV Charging Problem
 
-# Nomenclature
+This project explores Host Capacity Management by transforming a bilevel optimization problem into a single-level optimization problem. The original formulation considers an upper-level decision maker managing transformer capacity and a lower-level model representing the flexible charging behavior of electric vehicle (EV) users. The bilevel model is reformulated into a single-level problem using Karush-Kuhn-Tucker (KKT) conditions.
 
-| Symbol           | Description                                                  |
-|------------------|--------------------------------------------------------------|
-| `H`              | Set of time slots (`h`)                                      |
-| `N`              | Set of prosumers (`n`)                                       |
-| `\tau_h`         | Time-of-use tariff at time slot `h`                          |
-| `p^{inf}_{h,n}`  | Load demand of prosumer `n` at time slot `h`                 |
-| `p^{ev}_{h,n}`   | EV (flexible) demand of prosumer `n` at time slot `h`        |
-| `e^{ev}_n`       | EV battery state of charge of prosumer `n`                   |
-| `E^{ev}_{min}`   | EV minimum state of charge                                   |
-| `P^{max}`        | Transformer thermal limit                                    |
-| `p^{max}_{h,n}`  | Power limit for prosumer `n` at time slot `h`                |
+## Problem Overview
 
-# Lower Level Optimization Problem
+With increasing penetration of Electric Vehicles (EVs), distribution transformers face potential thermal overload risks. This project tackles the problem of scheduling EV charging in a way that:
+	•	Respects transformer thermal capacity limits (Upper Level),
+	•	Allows flexible EV charging while satisfying household energy demand (Lower Level).
 
-Minimize:
+The lower-level decisions (EV charging behavior) are incorporated into the upper-level problem via KKT conditions, enabling efficient and tractable solution as a single-level nonlinear optimization problem.
 
-$$
-\min_{p^{\text{ev}}_h} \sum_{h \in H} \tau_h (p^{\text{inf}}_h + p^{\text{ev}}_h)
-$$
+## Code Overview
+	•	MATLAB – Used for preprocessing, postprocessing, and invoking the AMPL API (via accessay.m).
+	•	AMPL (A Mathematical Programming Language) – Used to model and solve the optimization problem (file: kkt_modified.mod).
 
-Subject to:
+## Problem Formulation
 
-$$
-E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \leq 0
-$$
+### Upper-Level (Grid Operator / Transformer Host):
+	•	Objective: Ensure that total power demand from all consumers does not exceed transformer thermal limit.
+	•	Decision Variable: Maximun Power Draw limit for each household.
 
-$$
-p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \leq 0 \quad \forall h \in H
-$$
+### Lower-Level (Individual Households):
+	•	Model: Each household has:
+	•	Inflexible load (e.g. lighting, appliances),
+	•	Flexible EV charging with no power export and no on-site generation (e.g. PV),
+	•	EVs can only import energy for charging,
+  •	Time of Use Tariff Applied
+	•	Minimise Electricity Cost, while ensure EV are charged to minumn specified State of Charge
 
-⸻
+### Reformulation:
 
-## KKT Conditions
+The bilevel structure is flattened using the KKT optimality conditions of the lower-level problem, enabling solution as a single-level optimization.
 
-Lagrangian:
+To handle complementary slackness, which introduces non-convexity, the project uses a Big-M reformulation. Each complementary slackness condition of the form:
+λ_i * (g_i(x)) = 0
+is transformed using a binary variable and Big-M constant to enable tractable Mixed-Integer Programming (MIP).
 
-$$
-\mathcal{L}(p^{\text{ev}}_h, \lambda) =
-\sum_{h \in H} \tau_h(p^{\text{inf}}_h + p^{\text{ev}}_h)
-+ \lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \right)
-+ \sum_{h \in H} \lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right)
-$$
+## Results
 
-Stationarity:
+Currenly the Minimal Charging Stated constraint, the Transformer Thermal Limit contraints are respected. 
 
-$$
-\frac{\partial \mathcal{L}}{\partial p^{\text{ev}}_h} = \tau_h - \lambda^1 + \lambda^2_h = 0 \quad \forall h \in H
-$$
+![Before Or Without Flexiable load](images/Charging.png)
+![We would expect all the charging to be done in chaper time slots(white aeras)](images/Charging.png)
+![After or with Flexianl load](images/Charging.png)
 
-Primal Feasibility:
+However the lower level objective, minimising the electricity cost (with time of use tariff) does not seems to be in affect.
 
-$$
-E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \leq 0
-$$
-
-$$
-p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \leq 0 \quad \forall h \in H
-$$
-
-Dual Feasibility:
-
-$$
-\lambda^1 \geq 0
-$$
-
-$$
-\lambda^2_h \geq 0 \quad \forall h \in H
-$$
-
-Complementary Slackness:
-
-$$
-\lambda^1 \left( E^{\text{ev}}_{\min} - e^{\text{ev}} - \sum_{h \in H} p^{\text{ev}}_h \right) = 0
-$$
-
-$$
-\lambda^2_h \left( p^{\text{inf}}_h + p^{\text{ev}}_h - p^{\max}_h \right) = 0 \quad \forall h \in H
-$$
-
-⸻
-
-# Bi-level Reformulation with KKT
-
-Maximize:
-
-$$
-\max_{p^{\max}_{h,n}} \quad \sum_{h \in H} \sum_{n \in N} p^{\max}_{h,n}
-$$
-
-Subject to:
-
-$$
-\sum_{n \in N} p^{\max}_{h,n} - P^{\max} \leq 0 \quad \forall h \in H
-$$
-
-Stationarity:
-
-$$
-\tau_h - \lambda^1_n + \lambda^2_{h,n} = 0 \quad \forall h \in H, \forall n \in N
-$$
-
-Primal Feasibility:
-
-$$
-E^{\text{ev}}_{\min} - e^{\text{ev}}_n - \sum_{h \in H} p^{\text{ev}}_{h,n} \leq 0 \quad \forall n \in N
-$$
-
-$$
-p^{\text{inf}}_{h,n} + p^{\text{ev}}_{h,n} - p^{\max}_{h,n} \leq 0 \quad \forall h \in H, \forall n \in N
-$$
-
-Dual Feasibility:
-
-$$
-\lambda^1_n \geq 0 \quad \forall n \in N
-$$
-
-$$
-\lambda^2_{h,n} \geq 0 \quad \forall h \in H, \forall n \in N
-$$
-
-Complementary Slackness:
-
-$$
-\lambda^1_n \left( E^{\text{ev}}_{\min} - e^{\text{ev}}_n - \sum_{h \in H} p^{\text{ev}}_{h,n} \right) = 0 \quad \forall n \in N
-$$
-
-$$
-\lambda^2_{h,n} \left( p^{\text{inf}}_{h,n} + p^{\text{ev}}_{h,n} - p^{\max}_{h,n} \right) = 0 \quad \forall h \in H, \forall n \in N
-$$
+![We would expect all the charging to be done in chaper time slots(white aeras)](images/Charging.png)
