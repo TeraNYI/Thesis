@@ -40,10 +40,11 @@ is transformed using a binary variable and Big-M constant to enable tractable Mi
 
 Currenly the Minimal Charging Stated constraint, the Transformer Thermal Limit contraints are respected. 
 
-![Before Or Without Flexiable load](images/Charging.png)
-![We would expect all the charging to be done in chaper time slots(white aeras)](images/Charging.png)
-![After or with Flexianl load](images/Charging.png)
+![Before Or Without Flexiable load](images/withoutEV.png)
+
+![After or with Flexianl load](images/withEV.png)
+
 
 However the lower level objective, minimising the electricity cost (with time of use tariff) does not seems to be in affect.
 
-![We would expect all the charging to be done in chaper time slots(white aeras)](images/Charging.png)
+![We would expect all the charging to be done in chaper time slots(white aeras)](images/charging.png)
