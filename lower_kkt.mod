@@ -77,4 +77,4 @@ subject to CompSlack_Transformer {h in H}:
 #    p_inf[h,n] + p_ev[h,n] - Pmax_total <= M * z2[h,n];
 #
 #subject to CompSlack_Transformer_Reform2 {h in H, n in N}:
-#    lambda2[h,n] <= M * (1 - z2[h,n]);
+#    lambda2[h,n] <= M * (1 - z2[h,n]
