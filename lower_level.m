@@ -8,8 +8,6 @@ TOU_tariff_func = @(t) (t >= 7 & t <= 10) * 0.50 + ... % Peak hours: 7 AM to 10 
                        ((t < 7 | t > 20) & (t < 11 | t > 16)) * 0.10; % Off-peak hours
 
 TOU_tariff = TOU_tariff_func(H);     % Time-of-Use tariff
-TOU_tariff = ones(1,24);
-TOU_tariff(2) = 2;
 
 rng(1);                          % Seed for reproducibility
 P_flat = zeros(length(H), N);       % N demand profiles
@@ -32,7 +30,7 @@ T_limit = 2.4;     % Transformer Thermal Limit (kW)
 % AMPL
 
 ampl = AMPL('/Applications/AMPL/');
-%ampl.read('lower_level.mod');
+ampl.read('lower_level.mod');
 ampl.read('lower_kkt.mod');
 
 %ampl.setOption('solver', 'gurobi');
