@@ -42,6 +42,7 @@ minimize Objective: 0;
 # 1. Stationarity
 subject to Stationarity {h in H}:
     tau[h] - lambda1 + lambda2[h] = 0;
+    #tau[h] - lambda1 + lambda2[h] = 0; # without Time of Use Tariff
 
 # 2. Primal Feasibility
 subject to EV_Energy_Min:
@@ -77,4 +78,4 @@ subject to CompSlack_Transformer {h in H}:
 #    p_inf[h,n] + p_ev[h,n] - Pmax_total <= M * z2[h,n];
 #
 #subject to CompSlack_Transformer_Reform2 {h in H, n in N}:
-#    lambda2[h,n] <= M * (1 - z2[h,n]
+#    lambda2[h,n] <= M * (1 - z2[h,n]);

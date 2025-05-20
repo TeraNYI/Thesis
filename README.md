@@ -53,4 +53,14 @@ After or with Flexiable load:
 
 However the lower level objective, minimising the electricity cost (with time of use tariff) does not seems to be in affect.
 We would expect all the charging to be done in chaper time slots(white aeras):
-![We would expect all the charging to be done in chaper time slots(white aeras)](images/charging.
+![We would expect all the charging to be done in chaper time slots(white aeras)](images/charging.png)
+
+### Lower Level (single household)
+Expected Behaviours:
+
+- Without KKT reformulation, the result is as we would expect.
+lower_level.m + lower_level.mod
+![lower_simple_results](images/lower_level_results.png)
+
+- lower_level.m + lower_kkt.mod
+With KKT reformulation, could not get a result (got Infesible from ampl), unless we relax the time of use tariff.
