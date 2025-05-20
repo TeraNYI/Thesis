@@ -1,0 +1,71 @@
+\documentclass{report}
+
+\input{preamble/packages.tex}
+
+\begin{document}
+
+%%%%%%%%%%    COVER    %%%%%%%%%%
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+    \fill[color=usyd_b] (current page.north west) rectangle ++(4cm,-\paperheight);
+    \node[anchor=south west, text=white] at (current page.south west) {
+        \hspace{1.5cm}
+        \rotatebox{90}{
+            \setmainfont{LEMONMILK-Regular.otf}[Path=Assets/Fonts/]
+            \resizebox{!}{30pt}{\hspace{0.8cm} \color{usyd} Elec4712: Thesis Topic Proposal}
+        }
+    };
+\end{tikzpicture}
+
+\begin{flushright}
+
+\vspace{5cm}
+
+\includegraphics[width=0.75\textwidth]{Assets/logos/the-university-of-sydney-3-logo-png-transparent.png}~\\
+
+\vspace{4.5cm}
+\Huge \lemonmilk{Thesis Topic Proposal}
+
+\vspace{0.5cm}
+\small BY \lemonmilk{Tera NYI (490067334)}
+
+\vspace{2cm}
+
+\end{flushright}
+
+\end{titlepage}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%    LIST OF CONTENTS    %%%%%%%%%%
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\newpage
+%%%%%%%%%%    Pre_con    %%%%%%%%%%
+
+\chapter*{Nomanclature}
+\input{chapters/nomanclature.tex}
+
+\chapter*{Abstract} 
+
+This is the abstract.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%    Contents    %%%%%%%%%%
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\input{chapters/intro.tex}
+
+\chapter{Formulation}
+\input{chapters/formulation.tex}
+
+
+\end{document}
+
+
+

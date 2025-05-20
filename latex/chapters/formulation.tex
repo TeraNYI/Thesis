@@ -1,0 +1,64 @@
+\section{Lower Level}
+
+\begin{align*}
+\min_{p^{ev}_h} \quad & \sum_{h\in H} \tau_h(p^{inf}_{h} + p^{ev}_{h})\\
+\text{subject to} \quad&\\
+&  E^{ev}_{min} - e^{ev} -\sum_{h\in H} p^{ev}_{h}\leq 0\\
+& p^{inf}_{h} + p^{ev}_{h} - p^{max}_{h}\leq 0 \quad \forall h \in H
+\end{align*}
+
+
+\text{Lagrange:}
+ \begin{align*}
+\mathcal{L}(p^{ev}_h, \lambda) = 
+&\sum_{h \in H} \tau_h(p^{inf}_h + p^{ev}_h) \\
+&+ \lambda^1 \left( E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \right) \\
+&+ \sum_{h \in H} \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right)
+\end{align*}
+
+\begin{align*}
+% \[\tau_h - \lambda^1 + \sum_{h\in H}\lambda^2_h = 0\]
+\text{Stationarity:} \quad
+& \frac{\partial \mathcal{L}}{\partial p^{ev}_h} = \tau_h - \lambda^1 + \lambda^2_h = 0 \quad \forall h \in H \\
+\\
+\text{Primal feasibility:} \quad
+& E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \leq 0 \\
+& p^{inf}_h + p^{ev}_h - p^{max}_h \leq 0 \quad \forall h \in H\\ \\
+\text{Dual feasibility:} \quad
+& \lambda^1 \geq 0 \\
+& \lambda^2_h \geq 0 \quad \forall h \in H \\\\
+\text{Complementary slackness:} \quad
+& \lambda^1 \left( E^{ev}_{min} - e^{ev} - \sum_{h \in H} p^{ev}_h \right) = 0 \\
+& \lambda^2_h \left( p^{inf}_h + p^{ev}_h - p^{max}_h \right) = 0 \quad \forall h \in H
+\end{align*}
+
+\newpage
+\section{Bi-level Reformulation with KKT}
+
+\begin{align*}
+max_{p^{max}_{h,n}} \quad & p^{max}_{h,n} \\
+\text{subject to} \quad & \\
+& \sum_{n\in N} p^{max}_{h,n} - P^{max} \leq 0 \quad \forall h \in H \\\\
+%
+& \textbf{(Stationarity)} \\
+& \tau_h - \lambda^1_n + \lambda^2_{h,n} = 0 \quad \forall h \in H, \forall n \in N \\\\
+%
+& \textbf{(Primal Feasibility)} \\
+& E^{ev}_{min} - e^{ev}_n - \sum_{h \in H} p^{ev}_{h,n} \leq 0 \quad \forall n \in N \\
+& p^{inf}_{h,n} + p^{ev}_{h,n} - p^{max}_{h,n} \leq 0 \quad \forall h \in H, \forall n \in N \\\\
+%
+& \textbf{(Dual Feasibility)} \\
+& \lambda^1_n \geq 0 \quad \forall n \in N \\
+& \lambda^2_{h,n} \geq 0 \quad \forall h \in H, \forall n \in N \\\\
+%
+& \textbf{(Complementary Slackness)} \\
+& \lambda^1_n \left( E^{ev}_{min} - e^{ev}_n - \sum_{h \in H} p^{ev}_{h,n} \right) = 0 \quad \forall n \in N \\
+& \lambda^2_{h,n} \left( p^{inf}_{h,n} + p^{ev}_{h,n} - p^{max}_{h,n} \right) = 0 \quad \forall h \in H, \forall n \in N\\\\
+%
+& \textbf{(Big M reformulation for Complementary Slackness)} \\
+& \lambda^1_n \leq M z^1_n \quad \forall n \in N \\
+& E^{ev}_{min} - e^{ev}_n - \sum_{h \in H} p^{ev}_{h,n} \leq M (1 - z^1_n) \quad \forall n \in N \\\\
+& \lambda^2_{h,n} \leq M z^2_{h,n} \quad \forall h \in H, \forall n \in N \\
+& p^{inf}_{h,n} + p^{ev}_{h,n} - p^{max}_{h,n} \leq M (1 - z^2_{h,n}) \quad \forall h \in H, \forall n \in N \\\\
+& z^1_n \in \{0,1\}, \quad z^2_{h,n} \in \{0,1\} \quad \forall h \in H, \forall n \in N
+\end{align*}

@@ -1,0 +1,2699 @@
+This is METAFONT, Version 2.71828182 (preloaded base=mf 2025.5.15)  18 MAY 2025 00:26
+**\mode:=ljfour; mag:=1; ; nonstopmode; input a
+(/usr/local/texlive/2025/texmf-dist/fonts/source/public/levy/a.mf
+>> readfrom
+! Isolated expression.
+<to be read again> 
+                   (
+l.26 if unknown gen_acc : readfrom(
+                                   "gen_acc") fi
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.26 if unknown gen_acc : readfrom(
+                                   "gen_acc") fi
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha"
+l.52 cmchar "Lowercase alpha"
+                             ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha"
+l.52 cmchar "Lowercase alpha"
+                             ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.53 beginchar("a",dims)
+                        ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> x_height#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.53 beginchar("a",dims)
+                        ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.54 this_letter;
+                  penlabels(1,2,3,4,5,6,7); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+[97]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with grave"
+l.58 cmchar "Lowercase alpha with grave"
+                                        ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with grave"
+l.58 cmchar "Lowercase alpha with grave"
+                                        ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.59 beginchar(oct"200",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.59 beginchar(oct"200",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.60 this_letter;
+                  grave(x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> grave
+! Isolated expression.
+<to be read again> 
+                   (
+l.60 this_letter; grave(
+                        x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.60 this_letter; grave(
+                        x_baryctr); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[128]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with rough breathing"
+l.62 cmchar "Lowercase alpha with rough breathing"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with rough breathing"
+l.62 cmchar "Lowercase alpha with rough breathing"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.63 beginchar(oct"201",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.63 beginchar(oct"201",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.64 this_letter;
+                  spirit(x_baryctr)<; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit
+! Isolated expression.
+<to be read again> 
+                   (
+l.64 this_letter; spirit(
+                         x_baryctr)<; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.64 this_letter; spirit(
+                         x_baryctr)<; endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[129]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing"
+l.66 ...ar "Lowercase alpha with smooth breathing"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing"
+l.66 ...ar "Lowercase alpha with smooth breathing"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.67 beginchar(oct"202",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.67 beginchar(oct"202",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.68 this_letter;
+                  spirit(x_baryctr)>; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit
+! Isolated expression.
+<to be read again> 
+                   (
+l.68 this_letter; spirit(
+                         x_baryctr)>; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.68 this_letter; spirit(
+                         x_baryctr)>; endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[130]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with grave"
+l.70 ...ercase sigma followed by alpha with grave"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with grave"
+l.70 ...ercase sigma followed by alpha with grave"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> begindoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.71 begindoublechar(
+                     oct"203",dim_sigma);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.71 begindoublechar(
+                     oct"203",dim_sigma);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> mid_sigma
+! Isolated expression.
+<to be read again> 
+                   ;
+l.72 mid_sigma;
+                middoublechar(width#,acc_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> middoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.72 mid_sigma; middoublechar(
+                              width#,acc_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.72 mid_sigma; middoublechar(
+                              width#,acc_ht#,0);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.73 this_letter;
+                  grave(x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> grave
+! Isolated expression.
+<to be read again> 
+                   (
+l.73 this_letter; grave(
+                        x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.73 this_letter; grave(
+                        x_baryctr); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[130]
+! Extra `endgroup'.
+endchar->...makebox(screenrule);showit;fi.endgroup
+                                                  
+l.73 this_letter; grave(x_baryctr); endchar
+                                           ;
+I'm not currently working on a `begingroup',
+so I had better not try to end anything.
+
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with grave and iota subscript"
+l.75 ...rcase alpha with grave and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with grave and iota subscript"
+l.75 ...rcase alpha with grave and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.76 beginchar(oct"204",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.76 beginchar(oct"204",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.76 beginchar(oct"204",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.77 this_letter;
+                  grave(x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> grave
+! Isolated expression.
+<to be read again> 
+                   (
+l.77 this_letter; grave(
+                        x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.77 this_letter; grave(
+                        x_baryctr); iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.77 this_letter; grave(x_baryctr); iota_sub(
+                                             pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.77 this_letter; grave(x_baryctr); iota_sub(
+                                             pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[132]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with rough breathing and iota subscript"
+l.79 ...a with rough breathing and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with rough breathing and iota subscript"
+l.79 ...a with rough breathing and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.80 beginchar(oct"205",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.80 beginchar(oct"205",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.80 beginchar(oct"205",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.81 this_letter;
+                  spirit(x_baryctr)<; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit
+! Isolated expression.
+<to be read again> 
+                   (
+l.81 this_letter; spirit(
+                         x_baryctr)<; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.81 this_letter; spirit(
+                         x_baryctr)<; iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.81 this_letter; spirit(x_baryctr)<; iota_sub(
+                                               pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.81 this_letter; spirit(x_baryctr)<; iota_sub(
+                                               pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[133]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and iota subscript"
+l.83 ... with smooth breathing and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and iota subscript"
+l.83 ... with smooth breathing and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.84 beginchar(oct"206",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.84 beginchar(oct"206",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.84 beginchar(oct"206",width#,acc_ht#,iota_dp#)
+                                                ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.85 this_letter;
+                  spirit(x_baryctr)>; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit
+! Isolated expression.
+<to be read again> 
+                   (
+l.85 this_letter; spirit(
+                         x_baryctr)>; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.85 this_letter; spirit(
+                         x_baryctr)>; iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.85 this_letter; spirit(x_baryctr)>; iota_sub(
+                                               pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.85 this_letter; spirit(x_baryctr)>; iota_sub(
+                                               pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[134]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with iota subscript"
+l.87 ...gma followed by alpha with iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with iota subscript"
+l.87 ...gma followed by alpha with iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> begindoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.88 begindoublechar(
+                     oct"207",dim_sigma);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.88 begindoublechar(
+                     oct"207",dim_sigma);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> mid_sigma
+! Isolated expression.
+<to be read again> 
+                   ;
+l.89 mid_sigma;
+               
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> middoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.90 middoublechar(
+                   width#,height#,iota_dp#);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.90 middoublechar(
+                   width#,height#,iota_dp#);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.91 this_letter;
+                  iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.91 this_letter; iota_sub(
+                           pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.91 this_letter; iota_sub(
+                           pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[134]
+! Extra `endgroup'.
+endchar->...makebox(screenrule);showit;fi.endgroup
+                                                  
+l.91 this_letter; iota_sub(pos_stem); endchar
+                                             ;
+I'm not currently working on a `begingroup',
+so I had better not try to end anything.
+
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with acute"
+l.93 cmchar "Lowercase alpha with acute"
+                                        ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with acute"
+l.93 cmchar "Lowercase alpha with acute"
+                                        ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.94 beginchar(oct"210",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.94 beginchar(oct"210",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.95 this_letter;
+                  acute(x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.95 this_letter; acute(
+                        x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.95 this_letter; acute(
+                        x_baryctr); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[136]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with rough breathing and acute"
+l.97 ...case alpha with rough breathing and acute"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with rough breathing and acute"
+l.97 ...case alpha with rough breathing and acute"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.98 beginchar(oct"211",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.98 beginchar(oct"211",width#,acc_ht#,0)
+                                         ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.99 this_letter;
+                  spirit_acute(x_baryctr)<; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.99 this_letter; spirit_acute(
+                               x_baryctr)<; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.99 this_letter; spirit_acute(
+                               x_baryctr)<; endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[137]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and acute"
+l.101 ...se alpha with smooth breathing and acute"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and acute"
+l.101 ...se alpha with smooth breathing and acute"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.102 beginchar(oct"212",width#,acc_ht#,0)
+                                          ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.102 beginchar(oct"212",width#,acc_ht#,0)
+                                          ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.103 this_letter;
+                   spirit_acute(x_baryctr)>; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.103 this_letter; spirit_acute(
+                                x_baryctr)>; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.103 this_letter; spirit_acute(
+                                x_baryctr)>; endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[138]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with acute"
+l.105 ...rcase sigma followed by alpha with acute"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with acute"
+l.105 ...rcase sigma followed by alpha with acute"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> begindoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.106 begindoublechar(
+                      oct"213",dim_sigma);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.106 begindoublechar(
+                      oct"213",dim_sigma);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> mid_sigma
+! Isolated expression.
+<to be read again> 
+                   ;
+l.107 mid_sigma;
+                 middoublechar(width#,acc_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> middoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.107 mid_sigma; middoublechar(
+                               width#,acc_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.107 mid_sigma; middoublechar(
+                               width#,acc_ht#,0);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.108 this_letter;
+                   acute(x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.108 this_letter; acute(
+                         x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.108 this_letter; acute(
+                         x_baryctr); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[138]
+! Extra `endgroup'.
+endchar->...makebox(screenrule);showit;fi.endgroup
+                                                  
+l.108 this_letter; acute(x_baryctr); endchar
+                                            ;
+I'm not currently working on a `begingroup',
+so I had better not try to end anything.
+
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with acute and iota subscript"
+l.110 ...case alpha with acute and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with acute and iota subscript"
+l.110 ...case alpha with acute and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.111 beginchar(oct"214",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.111 beginchar(oct"214",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.111 beginchar(oct"214",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.112 this_letter;
+                   acute(x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.112 this_letter; acute(
+                         x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.112 this_letter; acute(
+                         x_baryctr); iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.112 this_letter; acute(x_baryctr); iota_sub(
+                                              pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.112 this_letter; acute(x_baryctr); iota_sub(
+                                              pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[140]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with rough breathing, acute and iota sub...
+l.114 ...ough breathing, acute and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with rough breathing, acute and iota sub...
+l.114 ...ough breathing, acute and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.115 beginchar(oct"215",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.115 beginchar(oct"215",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.115 beginchar(oct"215",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.116 this_letter;
+                   spirit_acute(x_baryctr)<; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.116 this_letter; spirit_acute(
+                                x_baryctr)<; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.116 this_letter; spirit_acute(
+                                x_baryctr)<; iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.116 ...tter; spirit_acute(x_baryctr)<; iota_sub(
+                                                  pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.116 ...tter; spirit_acute(x_baryctr)<; iota_sub(
+                                                  pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[141]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and acute and iota...
+l.118 ...h breathing and acute and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and acute and iota...
+l.118 ...h breathing and acute and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.119 beginchar(oct"216",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.119 beginchar(oct"216",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.119 beginchar(oct"216",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.120 this_letter;
+                   spirit_acute(x_baryctr)>; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.120 this_letter; spirit_acute(
+                                x_baryctr)>; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.120 this_letter; spirit_acute(
+                                x_baryctr)>; iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.120 ...tter; spirit_acute(x_baryctr)>; iota_sub(
+                                                  pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.120 ...tter; spirit_acute(x_baryctr)>; iota_sub(
+                                                  pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[142]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with acute and iota su...
+l.122 ...d by alpha with acute and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with acute and iota su...
+l.122 ...d by alpha with acute and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> begindoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.123 begindoublechar(
+                      oct"217",dim_sigma);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.123 begindoublechar(
+                      oct"217",dim_sigma);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> mid_sigma
+! Isolated expression.
+<to be read again> 
+                   ;
+l.124 mid_sigma;
+                 middoublechar(width#,acc_ht#,iota_dp#);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> middoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.124 mid_sigma; middoublechar(
+                               width#,acc_ht#,iota_dp#);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.124 mid_sigma; middoublechar(
+                               width#,acc_ht#,iota_dp#);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.125 this_letter;
+                   acute(x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> acute
+! Isolated expression.
+<to be read again> 
+                   (
+l.125 this_letter; acute(
+                         x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.125 this_letter; acute(
+                         x_baryctr); iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.125 this_letter; acute(x_baryctr); iota_sub(
+                                              pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.125 this_letter; acute(x_baryctr); iota_sub(
+                                              pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[142]
+! Extra `endgroup'.
+endchar->...makebox(screenrule);showit;fi.endgroup
+                                                  
+l.125 ...e(x_baryctr); iota_sub(pos_stem); endchar
+                                                  ;
+I'm not currently working on a `begingroup',
+so I had better not try to end anything.
+
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with circumflex"
+l.127 cmchar "Lowercase alpha with circumflex"
+                                              ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with circumflex"
+l.127 cmchar "Lowercase alpha with circumflex"
+                                              ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.128 beginchar(oct"220",width#,circ_ht#,0)
+                                           ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> circ_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.128 beginchar(oct"220",width#,circ_ht#,0)
+                                           ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.129 this_letter;
+                   circumflex(x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.129 this_letter; circumflex(
+                              x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.129 this_letter; circumflex(
+                              x_baryctr); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[144]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with rough breathing and circumflex"
+l.131 ...lpha with rough breathing and circumflex"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with rough breathing and circumflex"
+l.131 ...lpha with rough breathing and circumflex"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.132 beginchar(oct"221",width#,Circ_ht#,0)
+                                           ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> Circ_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.132 beginchar(oct"221",width#,Circ_ht#,0)
+                                           ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.133 this_letter;
+                   spirit_circumflex(x_baryctr)<; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.133 this_letter; spirit_circumflex(
+                                     x_baryctr)<; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.133 this_letter; spirit_circumflex(
+                                     x_baryctr)<; endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[145]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and circumflex"
+l.135 ...pha with smooth breathing and circumflex"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing and circumflex"
+l.135 ...pha with smooth breathing and circumflex"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.136 beginchar(oct"222",width#,Circ_ht#,0)
+                                           ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> Circ_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.136 beginchar(oct"222",width#,Circ_ht#,0)
+                                           ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.137 this_letter;
+                   spirit_circumflex(x_baryctr)>; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.137 this_letter; spirit_circumflex(
+                                     x_baryctr)>; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.137 this_letter; spirit_circumflex(
+                                     x_baryctr)>; endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[146]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with circumflex"
+l.139 ... sigma followed by alpha with circumflex"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with circumflex"
+l.139 ... sigma followed by alpha with circumflex"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> begindoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.140 begindoublechar(
+                      oct"223",dim_sigma);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.140 begindoublechar(
+                      oct"223",dim_sigma);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> mid_sigma
+! Isolated expression.
+<to be read again> 
+                   ;
+l.141 mid_sigma;
+                 middoublechar(width#,Circ_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> middoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.141 mid_sigma; middoublechar(
+                               width#,Circ_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.141 mid_sigma; middoublechar(
+                               width#,Circ_ht#,0);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.142 this_letter;
+                   circumflex(x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.142 this_letter; circumflex(
+                              x_baryctr); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.142 this_letter; circumflex(
+                              x_baryctr); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[146]
+! Extra `endgroup'.
+endchar->...makebox(screenrule);showit;fi.endgroup
+                                                  
+l.142 this_letter; circumflex(x_baryctr); endchar
+                                                 ;
+I'm not currently working on a `begingroup',
+so I had better not try to end anything.
+
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with circumflex and iota subscript"
+l.144 ...alpha with circumflex and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with circumflex and iota subscript"
+l.144 ...alpha with circumflex and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.145 beginchar(oct"224",width#,circ_ht#,iota_dp#)
+                                                  ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> circ_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.145 beginchar(oct"224",width#,circ_ht#,iota_dp#)
+                                                  ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.145 beginchar(oct"224",width#,circ_ht#,iota_dp#)
+                                                  ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.146 this_letter;
+                   circumflex(x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.146 this_letter; circumflex(
+                              x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.146 this_letter; circumflex(
+                              x_baryctr); iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.146 ..._letter; circumflex(x_baryctr); iota_sub(
+                                                  pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.146 ..._letter; circumflex(x_baryctr); iota_sub(
+                                                  pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[148]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with rough breathing, circumflex and iot...
+l.148 ...breathing, circumflex and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with rough breathing, circumflex and iot...
+l.148 ...breathing, circumflex and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.149 beginchar(oct"225",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.149 beginchar(oct"225",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.149 beginchar(oct"225",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.150 this_letter;
+                   spirit_circumflex(x_baryctr)<; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.150 this_letter; spirit_circumflex(
+                                     x_baryctr)<; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.150 this_letter; spirit_circumflex(
+                                     x_baryctr)<; iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.150 ... spirit_circumflex(x_baryctr)<; iota_sub(
+                                                  pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.150 ... spirit_circumflex(x_baryctr)<; iota_sub(
+                                                  pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[149]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing, circumflex and io...
+l.152 ...breathing, circumflex and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with smooth breathing, circumflex and io...
+l.152 ...breathing, circumflex and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.153 beginchar(oct"226",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> acc_ht#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.153 beginchar(oct"226",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.153 beginchar(oct"226",width#,acc_ht#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.154 this_letter;
+                   spirit_circumflex(x_baryctr)>; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> spirit_circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.154 this_letter; spirit_circumflex(
+                                     x_baryctr)>; iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.154 this_letter; spirit_circumflex(
+                                     x_baryctr)>; iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.154 ... spirit_circumflex(x_baryctr)>; iota_sub(
+                                                  pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.154 ... spirit_circumflex(x_baryctr)>; iota_sub(
+                                                  pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[150]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with circumflex and io...
+l.156 ...alpha with circumflex and iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase sigma followed by alpha with circumflex and io...
+l.156 ...alpha with circumflex and iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> begindoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.157 begindoublechar(
+                      oct"227",dim_sigma);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.157 begindoublechar(
+                      oct"227",dim_sigma);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> mid_sigma
+! Isolated expression.
+<to be read again> 
+                   ;
+l.158 mid_sigma;
+                 middoublechar(width#,Circ_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> middoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.158 mid_sigma; middoublechar(
+                               width#,Circ_ht#,0);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.158 mid_sigma; middoublechar(
+                               width#,Circ_ht#,0);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.159 this_letter;
+                   circumflex(x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> circumflex
+! Isolated expression.
+<to be read again> 
+                   (
+l.159 this_letter; circumflex(
+                              x_baryctr); iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.159 this_letter; circumflex(
+                              x_baryctr); iota_sub(pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.159 ..._letter; circumflex(x_baryctr); iota_sub(
+                                                  pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.159 ..._letter; circumflex(x_baryctr); iota_sub(
+                                                  pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[150]
+! Extra `endgroup'.
+endchar->...makebox(screenrule);showit;fi.endgroup
+                                                  
+l.159 ...x(x_baryctr); iota_sub(pos_stem); endchar
+                                                  ;
+I'm not currently working on a `begingroup',
+so I had better not try to end anything.
+
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase alpha with iota subscript"
+l.161 cmchar "Lowercase alpha with iota subscript"
+                                                  ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase alpha with iota subscript"
+l.161 cmchar "Lowercase alpha with iota subscript"
+                                                  ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> width#
+! Internal quantity `charwd' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...byte(EXPR0)else:0fi;charwd:=(EXPR1);
+                                                  charht:=(EXPR2);chardp:=(E...
+l.162 beginchar(oct"370",width#,height#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> x_height#
+! Internal quantity `charht' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...0fi;charwd:=(EXPR1);charht:=(EXPR2);
+                                                  chardp:=(EXPR3);w:=hround(...
+l.162 beginchar(oct"370",width#,height#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> iota_dp#
+! Internal quantity `chardp' must receive a known value.
+<to be read again> 
+                   ;
+beginchar->...R1);charht:=(EXPR2);chardp:=(EXPR3);
+                                                  w:=hround(charwd*hppp);h:=...
+l.162 beginchar(oct"370",width#,height#,iota_dp#)
+                                                 ;
+I can't set an internal quantity to anything but a known
+numeric value, so I'll have to ignore this assignment.
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.163 this_letter;
+                   iota_sub(pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> iota_sub
+! Isolated expression.
+<to be read again> 
+                   (
+l.163 this_letter; iota_sub(
+                            pos_stem); endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.163 this_letter; iota_sub(
+                            pos_stem); endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+[248]
+>> cmchar
+! Isolated expression.
+<to be read again> 
+                   "Lowercase sigma followed by alpha"
+l.165 cmchar "Lowercase sigma followed by alpha"
+                                                ;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   "Lowercase sigma followed by alpha"
+l.165 cmchar "Lowercase sigma followed by alpha"
+                                                ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> begindoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.166 begindoublechar(
+                      oct"001",dim_sigma);
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.166 begindoublechar(
+                      oct"001",dim_sigma);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> mid_sigma
+! Isolated expression.
+<to be read again> 
+                   ;
+l.167 mid_sigma;
+                 middoublechar(dims); this_letter; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+>> middoublechar
+! Isolated expression.
+<to be read again> 
+                   (
+l.167 mid_sigma; middoublechar(
+                               dims); this_letter; endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.167 mid_sigma; middoublechar(
+                               dims); this_letter; endchar;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> this_letter
+! Isolated expression.
+<to be read again> 
+                   ;
+l.167 mid_sigma; middoublechar(dims); this_letter;
+                                                   endchar;
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+[248]
+! Extra `endgroup'.
+endchar->...makebox(screenrule);showit;fi.endgroup
+                                                  
+l.167 ...middoublechar(dims); this_letter; endchar
+                                                  ;
+I'm not currently working on a `begingroup',
+so I had better not try to end anything.
+
+)
+! Emergency stop.
+<*> \mode:=ljfour; mag:=1; ; nonstopmode; input a
+                                                 
+*** (job aborted, no legal end found)
+
+Output written on a.2602gf (27 characters, 4164 bytes).
