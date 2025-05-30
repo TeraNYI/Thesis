@@ -9,10 +9,10 @@
 \begin{tikzpicture}[remember picture,overlay]
     \fill[color=usyd_b] (current page.north west) rectangle ++(4cm,-\paperheight);
     \node[anchor=south west, text=white] at (current page.south west) {
-        \hspace{1.5cm}
+        \hspace{1.3cm}
         \rotatebox{90}{
             \setmainfont{LEMONMILK-Regular.otf}[Path=Assets/Fonts/]
-            \resizebox{!}{30pt}{\hspace{0.8cm} \color{usyd} Elec4712: Thesis Topic Proposal}
+            \resizebox{!}{27pt}{\hspace{0.2cm} \color{usyd} Elec4712: Hosting Capacity Management}
         }
     };
 \end{tikzpicture}
@@ -24,7 +24,7 @@
 \includegraphics[width=0.75\textwidth]{Assets/logos/the-university-of-sydney-3-logo-png-transparent.png}~\\
 
 \vspace{4.5cm}
-\Huge \lemonmilk{Thesis Topic Proposal}
+\Huge \lemonmilk{Thesis Progress Report}
 
 \vspace{0.5cm}
 \small BY \lemonmilk{Tera NYI (490067334)}
@@ -61,9 +61,36 @@ This is the abstract.
 \chapter{Introduction}
 \input{chapters/intro.tex}
 
-\chapter{Formulation}
-\input{chapters/formulation.tex}
+\newpage
+\chapter{Literature Review}
+\input{chapters/literature.tex}
+Generic Demand - \cite{8038815} \\
+Capacity Firming - \cite{ALDAADI2025135221}
 
+\newpage
+\chapter{Assumptions}
+\input{chapters/modelling_assumption.tex}
+
+\newpage
+\chapter{Modelling}
+\input{chapters/modelling.tex}
+
+\newpage
+\chapter{Analysis}
+\input{chapters/analysis.tex}
+
+\newpage
+\chapter{Conclusion}
+\input{chapters/Conclusion.tex}
+
+\appendix
+\chapter{Additional Figures}
+\input{chapters/appendix.tex}
+\chapter{Codes}
+
+% --------- reference biblatex ---------
+\bibliographystyle{ieeetr}
+\bibliography{references}
 
 \end{document}
 

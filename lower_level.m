@@ -30,7 +30,7 @@ T_limit = 2.4;     % Transformer Thermal Limit (kW)
 % AMPL
 
 ampl = AMPL('/Applications/AMPL/');
-ampl.read('lower_level.mod');
+%ampl.read('lower_level.mod');
 ampl.read('lower_kkt.mod');
 
 %ampl.setOption('solver', 'gurobi');

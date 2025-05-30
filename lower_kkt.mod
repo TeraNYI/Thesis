@@ -20,6 +20,7 @@ var p_ev {h in H} >= 0;       # EV charging power [kW]
 var p_max {h in H} >= 0;      # Maximum allowable transformer limit per user per time
 
 # Dual variables (Lagrange multipliers)
+var lambda {h in H} >= 0;    # Multiplier for transformer constraint
 var lambda1 >= 0;            # Multiplier for energy constraint
 var lambda2 {h in H} >= 0;    # Multiplier for transformer constraint
 
@@ -41,7 +42,7 @@ minimize Objective: 0;
 
 # 1. Stationarity
 subject to Stationarity {h in H}:
-    tau[h] - lambda1 + lambda2[h] = 0;
+    tau[h] - lambda[h] - lambda1 + lambda2[h] = 0;
     #tau[h] - lambda1 + lambda2[h] = 0; # without Time of Use Tariff
 
 # 2. Primal Feasibility
@@ -55,6 +56,11 @@ subject to Max_Load_Limit {h in H}:
 # Already enforced by `>= 0` in variable declaration
 
 # 4. Complementary Slackness
+
+subject to CompSlack_Bound {h in H}:  # Add this constraint
+    lambda[h] * p_ev[h] = 0;
+
+
 subject to CompSlack_Energy:
     lambda1 * (E_ev_min - e_ev - sum{h in H}p_ev[h]) = 0;
 

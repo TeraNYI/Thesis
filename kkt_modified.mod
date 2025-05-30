@@ -22,7 +22,8 @@ var p_max {h in H, n in N} >= 0;      # Maximum allowable transformer limit per 
 
 # Dual variables (Lagrange multipliers)
 var lambda1 {n in N} >= 0;            # Multiplier for energy constraint
-var lambda2 {h in H, n in N} >= 0;    # Multiplier for transformer constraint
+var lambda2 {h in H, n in N} >= 0;    # Multiplier for power constraint
+var lambda3 {h in H, n in N} >= 0;    # Multiplier for transformer constraint
 
 # Auxiliary variable for total load
 var p_total {h in H, n in N} = p_inf[h,n] + p_ev[h,n];
@@ -31,9 +32,10 @@ var p_total {h in H, n in N} = p_inf[h,n] + p_ev[h,n];
 # OBJECTIVE
 # =============================
 
-maximize Objective {n in N, h in H}: p_max[h,n];
+#maximize Objective {n in N, h in H}: p_max[h,n];
+maximize Objective{n in N}:sum{h in H} p_max[h,n];
 
-# =============================
+# ============================= 
 # CONSTRAINTS
 # =============================
 
@@ -45,7 +47,7 @@ subject to TransformerCapacity {h in H}:
 
 # 1. Stationarity
 subject to Stationarity {h in H, n in N}:
-    tau[h] - lambda1[n] + lambda2[h,n] = 0;
+    tau[h] - lambda1[n] - lambda2[h,n] + lambda3[h,n] = 0;
 
 # 2. Primal Feasibility
 subject to EV_Energy_Min {n in N}:
@@ -61,6 +63,9 @@ subject to Max_Load_Limit {h in H, n in N}:
 subject to CompSlack_Energy {n in N}:
     lambda1[n] * (E_ev_min[n] - e_ev[n] - sum {h in H} p_ev[h,n]) = 0;
 
+subject to CompSlack_bound {h in H,n in N}:
+    lambda2[h,n] * p_ev[h,n] = 0;
+
 #param M = 1e14;  # A large constant for the reformulation
 #var z1 {n in N}, binary;
 #
@@ -72,7 +77,7 @@ subject to CompSlack_Energy {n in N}:
 
 
 subject to CompSlack_Transformer {h in H, n in N}:
-    lambda2[h,n] * (p_inf[h,n] + p_ev[h,n] - p_max[h,n]) = 0;
+    lambda3[h,n] * (p_inf[h,n] + p_ev[h,n] - p_max[h,n]) = 0;
 
 #var z2 {h in H, n in N}, binary;
 #

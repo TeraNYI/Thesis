@@ -9,7 +9,7 @@ TOU_tariff_func = @(t) (t >= 7 & t <= 10) * 0.50 + ... % Peak hours: 7 AM to 10 
 
 TOU_tariff = TOU_tariff_func(H);     % Time-of-Use tariff 
 
-rng(1);                          % Seed for reproducibility
+rng(7);                          % Seed for reproducibility
 P_flat = zeros(length(H), N);       % N demand profiles
 P_ev = zeros(length(H), N);         % preallocated EV charging demand profiles
 
@@ -32,9 +32,9 @@ T_limit = max(sum(P_flat,2)) + 0.01;     % Transformer Thermal Limit (kW)
 
 ampl = AMPL('/Applications/AMPL/');
 ampl.read('kkt_modified.mod');
+ampl.setOption('solver', 'gurobi');
 %ampl.setOption('solver', 'gurobi');
-%ampl.setOption('solver', 'gurobi');
-%ampl.setOption('gurobi_options', 'nonconvex=2');
+ampl.setOption('gurobi_options', 'nonconvex=2');
 
 ampl.setOption('solver', 'gurobi');
 
@@ -72,6 +72,8 @@ ampl.setData(df)
 ampl.solve()
 
 sol = ampl.getVariable('p_ev').getValues();
+
+ampl.close()
 p = sol.getColumnAsDoubles('p_ev.val');
 P_ma = reshape(p, N, []).';
 
